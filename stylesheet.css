@@ -1,0 +1,12 @@
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid darkgray;
+}
+
+.btn-outline-success {
+  btn-border-color: darkgray;
+}
+
+.footer {
+  background-color: #f4f4f6;
+}
