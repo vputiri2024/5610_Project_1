@@ -7,6 +7,10 @@
   btn-border-color: darkgray;
 }
 
+.core {
+  border-bottom: 1px solid darkgray;
+}
+
 .footer {
   background-color: #f4f4f6;
 }
