@@ -3,165 +3,469 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vince Putiri Intro</title>
+    <meta name="author" content="Vincent Putiri" />
+    <meta
+      name="description"
+      content="Build — what Vincent Putiri has engineered and shipped: projects, the Odelia meal-planning app, how AI fits into the workflow, and MS Computer Science coursework at Northeastern."
+    />
+    <link rel="icon" href="images/favicon.png" />
+    <title>Build · Vince Putiri</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="css/stylesheet.css" />
   </head>
-  <!--   <body class="d-flex flex-column h-100">-->
-  <body class="min-vh-100">
-    <!--    Header and Navigation-->
+  <body class="min-vh-100 d-flex flex-column">
+    <!-- Header and navigation -->
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <div class="col-8">
-            <a class="navbar-brand" href="#">Vince Putiri</a>
-          </div>
-          <div class="col-4">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">01 Product</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./build.html">02 Build</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="business.html">03 Business</a>
-                </li>
-              </ul>
-              <a class="btn btn-outline-dark" type="#contact">Contact</a>
-            </div>
+          <a class="navbar-brand" href="index.html">Vince Putiri</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">01 Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="build.html"
+                  >02 Build</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="business.html">03 Business</a>
+              </li>
+            </ul>
+            <a class="btn btn-outline-dark ms-lg-3" href="#contact">Contact</a>
           </div>
         </div>
       </nav>
     </header>
-    <!--    Main Section-->
+
     <main class="flex-grow-1">
-      <!--      part 1-->
-      <section class="segment container hero py-4 py-md-5">
-        <div class="row align-items-center g-lg-5 py-5">
-          <div class="col-lg-7 text-center text-lg-start">
-            <p>FULL-STACK PRODUCT DEVELOPER</p>
-            <h1 class="display-4 fw-bold lh-1 mb-3">BUILD</h1>
-            <p class="col-lg-10 fs-4">
-              Iterative product delivery drives the greatest value for clients.
+      <!-- Page header -->
+      <section class="segment container py-4 py-md-5">
+        <div class="row align-items-center g-lg-5 py-4">
+          <div class="col-lg-8">
+            <p class="mb-2">02 BUILD</p>
+            <h1 class="display-4 fw-bold lh-1 mb-3">
+              Engineer it. Ship it. Repeat.
+            </h1>
+            <p class="col-lg-10 fs-4 mb-0">
+              What I have actually built, what I am building now, and how I
+              work. Everything listed here is live and complete unless it says
+              otherwise.
             </p>
           </div>
-          <div class="col-md-10 mx-auto col-lg-5">
+          <div class="col-lg-4 text-lg-end">
+            <p class="mb-1">Currently completing</p>
+            <p class="fs-5 fw-semibold mb-0">MS Computer Science</p>
+            <p class="text-body-secondary mb-0">
+              Khoury College · Northeastern University
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="segment container py-4 py-md-5">
+        <div class="row mb-4">
+          <div class="col-lg-8">
+            <h2>Projects</h2>
+            <p class="text-body-secondary mb-0">
+              Each project lists the brief, what it demonstrates, and one
+              decision I made along the way. More will be added as the term goes
+              on.
+            </p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <article class="card h-100 hover-section">
+              <img
+                src="images/vince.png"
+                class="card-img-top"
+                alt="Screenshot of the Vince Putiri portfolio home page"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">This site</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  HTML5 · CSS3 · ES modules · Bootstrap 5
+                </h6>
+                <p class="card-text detail border-bottom pb-2">
+                  CS5610 Project 1: a three-page personal homepage, deployed
+                  publicly, with an original interactive component.
+                </p>
+                <p class="card-text">
+                  Demonstrates responsive layout, a Bootstrap grid customized
+                  with a small stylesheet, and a vanilla JavaScript module that
+                  highlights one pipeline card and dims the others.
+                </p>
+                <p class="card-text">
+                  Decision: no framework and no build step, so the site stays a
+                  set of files anyone can read.
+                </p>
+                <div class="mt-auto pt-2">
+                  <a
+                    href="https://vputiri2024.github.io/5610_Project_1/index.html"
+                    class="card-link"
+                    >Live</a
+                  >
+                  <a
+                    href="https://github.com/vputiri2024/5610_Project_1"
+                    class="card-link"
+                    >Repository</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100 hover-section">
+              <img
+                src="images/odelia.png"
+                class="card-img-top"
+                alt="Screenshot of the Odelia meal planning app"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Odelia</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  Family meal planning · in progress
+                </h6>
+                <p class="card-text detail border-bottom pb-2">
+                  A meal planning application for families, built from the
+                  ground up as a product, not a class exercise.
+                </p>
+                <p class="card-text">
+                  Demonstrates product scoping, data modeling, and iterative
+                  delivery on a problem I understand from years in food and
+                  nutrition.
+                </p>
+                <p class="card-text">
+                  Decision: ship a narrow first version for one household before
+                  generalizing.
+                </p>
+                <div class="mt-auto pt-2">
+                  <a href="#odelia" class="card-link">Read more</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100 hover-section border-dashed">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-body-secondary">Next project</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">
+                  CS5610 · later this term
+                </h6>
+                <p class="card-text text-body-secondary">
+                  This slot is reserved for the next deployed project from the
+                  web development course. It will follow the same format: brief,
+                  what it demonstrates, one decision, live link, repository.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Odelia -->
+      <section class="segment container py-4 py-md-5" id="odelia">
+        <div class="row align-items-end mb-4">
+          <div class="col-lg-8">
+            <p class="mb-2">FLAGSHIP · IN PROGRESS</p>
+            <h2>Odelia — family meal planning</h2>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <p class="text-body-secondary mb-0">
+              Private repository · demo available on request
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-4">
             <img
-              src="images/headshot.jpeg"
-              class="img-fluid"
-              alt="Vince image"
+              src="images/odelia.png"
+              class="img-fluid w-100 border"
+              alt="Current screenshot of the Odelia meal planning application"
             />
           </div>
         </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <div class="col">
+            <h5>The problem</h5>
+            <p class="mb-0">
+              Families plan meals in their heads, on the fridge, and in group
+              texts. The result is repeated grocery runs, food that goes to
+              waste, and the same six dinners on rotation. My background in
+              nutrition and in running a restaurant kitchen is where this
+              product starts.
+            </p>
+          </div>
+          <div class="col">
+            <h5>Product decisions</h5>
+            <p class="mb-0">
+              The first version plans a week for one household and builds the
+              shopping list from it. Recipe discovery, sharing, and nutrition
+              tracking were cut from v1 so the core loop could ship and be
+              tested with a real family.
+            </p>
+          </div>
+          <div class="col">
+            <h5>How it is built</h5>
+            <p class="mb-0">
+              A web application with a small relational data model: households,
+              members, meals, and a weekly plan. The stack and the tradeoffs
+              still open are documented alongside the code.
+            </p>
+          </div>
+          <div class="col">
+            <h5>AI in the product</h5>
+            <p class="mb-0">
+              An assistant suggests a week of meals from what the household
+              already likes and what is in the pantry. The plan itself, the
+              list, and the schedule stay deterministic so the family can trust
+              them.
+            </p>
+          </div>
+        </div>
       </section>
-      <section class="segment container-fluid core py-5 md-5">
-        <div class="row">
-          <p>PRODUCT EVOLUTION</p>
-          <h2>Define it. Build it. Deliver value.</h2>
-          <div class="col-4">
-            <div class="card h-100" style="width: 18rem">
+
+      <!-- How I build -->
+      <section class="segment container py-4 py-md-5">
+        <div class="row mb-4">
+          <div class="col-lg-8">
+            <h2>How I build</h2>
+            <p class="fs-5 mb-0">
+              AI is in the loop. I decide where the line sits.
+            </p>
+            <p class="text-body-secondary">
+              I build AI products and I build with AI. The skill is knowing what
+              to delegate, what to own, and how to check what comes back.
+            </p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
               <div class="card-body">
-                <h5 class="card-title">01</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Product</h6>
-                <p class="card-text detail border-bottom pb-2">
-                  Research it. Design it. Decide what ships and in what order.
-                </p>
+                <h5 class="card-title">I delegate</h5>
                 <p class="card-text">
-                  Fidelity Investments - 11 years, project management to product
-                  delivery
+                  Scaffolding, boilerplate, first-draft components, test
+                  generation, and documentation lookups. Tasks where speed
+                  matters more than authorship.
                 </p>
-                <p class="card-text">
-                  Wealthscape · Wealth Management Platform Strategy
-                </p>
-                <p class="card-text">PMP · CSM · CSPO</p>
-                <a href="index.html" class="card-link">Product Work</a>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card h-100" style="width: 18rem">
+          <div class="col">
+            <div class="card h-100 border-dark">
               <div class="card-body">
-                <h5 class="card-title">02</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Build</h6>
-                <p class="card-text detail border-bottom pb-2">
-                  Engineer it. Ship it. Repeat!
-                </p>
+                <h5 class="card-title">I own</h5>
                 <p class="card-text">
-                  Fidelity Investments - 11 years, project management to product
-                  delivery
+                  Scope, the data model, architecture, product decisions, review
+                  of every line that ships, and the call on what not to build.
                 </p>
-                <p class="card-text">Family Meal Planning App in Progress</p>
-                <p class="card-text">Northeastern Computer Science</p>
-                <br />
-                <a href="./build.html" class="card-link">Building Experience</a>
               </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card h-100" style="width: 18rem">
+          <div class="col">
+            <div class="card h-100">
               <div class="card-body">
-                <h5 class="card-title">03</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">Business</h6>
-                <p class="card-text detail border-bottom pb-2">
-                  Did it create value for the customers and the business?
-                </p>
+                <h5 class="card-title">I verify</h5>
                 <p class="card-text">
-                  Catalyst Restaurant - founding partner & investor,
-                  2011-present · 15 years
+                  Tests, reading the diff, running it, and recognizing when a
+                  model is confidently wrong. Nothing is merged on trust.
                 </p>
-                <p class="card-text">
-                  JetPub Scientific Communications - cofounder, 2015-present ·
-                  11 years
-                </p>
-                <br />
-                <br />
-                <a href="business.html" class="card-link">Business</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-body-secondary mt-4 mb-0">
+          Tools: Claude, GitHub Copilot. Where a page or component was generated
+          with AI, it says so on that page and the prompt is recorded in the
+          repository README.
+        </p>
+      </section>
+
+      <!-- Coursework -->
+      <section class="segment container py-4 py-md-5">
+        <div class="row align-items-end mb-3">
+          <div class="col-lg-8">
+            <h2>Coursework</h2>
+            <p class="text-body-secondary mb-0">
+              Master of Science, Computer Science · Khoury College, Northeastern
+              University · expected May 2027
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end text-body-secondary">
+            <span class="me-3">■ Completed</span><span>□ In progress</span>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table align-middle">
+            <thead>
+              <tr>
+                <th scope="col">Course</th>
+                <th scope="col">Title</th>
+                <th scope="col">What it built</th>
+                <th scope="col">Artifact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">■ CS 5800</th>
+                <td>Algorithms</td>
+                <td>
+                  Asymptotic analysis, recursion and dynamic programming,
+                  balanced trees. The reasoning behind the code, not just the
+                  code.
+                </td>
+                <td><a href="#">Problem sets</a></td>
+              </tr>
+              <tr>
+                <th scope="row">■ CS 5001</th>
+                <td>Intensive Foundations of CS</td>
+                <td>
+                  Programming fundamentals in Python: functions, data
+                  structures, testing, and writing code other people can read.
+                </td>
+                <td><a href="#">Assignments</a></td>
+              </tr>
+              <tr>
+                <th scope="row">■ CS 5004</th>
+                <td>Object-Oriented Design</td>
+                <td>
+                  Java, design patterns, and modeling a problem as classes that
+                  can change without breaking each other.
+                </td>
+                <td><a href="#">Project</a></td>
+              </tr>
+              <tr>
+                <th scope="row">□ CS 5610</th>
+                <td>Web Development</td>
+                <td>
+                  Front-end fundamentals, responsive layout with Bootstrap 5,
+                  and complete deployed sites. This page is one of them.
+                </td>
+                <td><a href="#top">This site</a></td>
+              </tr>
+              <tr>
+                <th scope="row">□ CY 5001</th>
+                <td>Cybersecurity Principles</td>
+                <td>
+                  Threat models, secure design, and the habits that keep the
+                  things I ship from becoming the next incident.
+                </td>
+                <td>—</td>
+              </tr>
+              <tr class="text-body-secondary">
+                <th scope="row" class="fw-normal">Planned</th>
+                <td>NLP · Machine Learning · Cloud Computing</td>
+                <td>Whichever the next term allows.</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-lg-3">
+            <h5>Outside the degree</h5>
+            <p class="text-body-secondary">
+              Structured programs completed alongside coursework.
+            </p>
+          </div>
+          <div class="col-lg-9">
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h6 class="card-title">CodePath — TIP 101 / 102 / 103</h6>
+                    <p class="card-text mb-0">
+                      Technical interview prep: data structures and algorithm
+                      patterns, practiced under time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h6 class="card-title">CodePath — AI 201</h6>
+                    <p class="card-text mb-0">
+                      Built a retrieval-augmented assistant; chunking strategy
+                      and retrieval quality.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="segment container-fluid core py-4 md-5">
-        <div class="row">
-          <div class="col-3">Harvard ALM · Finance</div>
-          <div class="col-3">Babson MBA · Entrepreneurship</div>
-          <div class="col-3">Northeastern MSCS · Engineering</div>
-          <div class="col-3">PMP · CSM · CSPO</div>
+
+      <!-- Credentials strip -->
+      <section class="segment container py-4">
+        <div class="row row-cols-2 row-cols-md-4 g-3 text-center text-md-start">
+          <div class="col">Harvard ALM · Finance</div>
+          <div class="col">Babson MBA · Entrepreneurship</div>
+          <div class="col">Northeastern MSCS · Engineering</div>
+          <div class="col">PMP · CSM · CSPO</div>
         </div>
+      </section>
+
+      <!-- Generation disclosure -->
+      <section class="container py-3">
+        <p class="small text-body-secondary mb-0">
+          This page was generated with Claude (Anthropic, Fable 5.1, September
+          2026) from a documented prompt, using the site's stylesheet,
+          navigation, and wireframe as inputs. The "How I build" section was
+          written by hand. The prompt, and what was kept or changed, is in the
+          repository README.
+        </p>
       </section>
     </main>
 
-    <!--    Footer Section-->
-    <footer class="footer mt-auto py-4 md-5">
+    <!-- Footer -->
+    <footer class="footer mt-auto py-4" id="contact">
       <section class="container py-1">
-        <div class="row">
-          <div class="col-8">
-            <h3>Location</h3>
-            <p>Greater Boston · South Shore · Rhode Island</p>
+        <div class="row align-items-center g-3">
+          <div class="col-md-8">
+            <h3>Let's talk.</h3>
+            <p class="mb-0">Greater Boston · South Shore · Rhode Island</p>
           </div>
-          <div class="col-4 row align-items-center">
-            <br />
-            <br />
-            <p>LinkedIn GitHub</p>
-            <!--            <a class="nav-link" href="#">LinkedIn</a>-->
-            <!--            <a class="nav-link" href="#">GitHub</a>-->
+          <div class="col-md-4">
+            <ul class="list-unstyled d-flex gap-4 justify-content-md-end mb-0">
+              <li>
+                <a href="https://www.linkedin.com/in/vincentaputiri/"
+                  >LinkedIn</a
+                >
+              </li>
+              <li><a href="https://github.com/vputiri2024">GitHub</a></li>
+              <li>
+                <a href="https://github.com/vputiri2024/5610_Project_1"
+                  >Source</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </section>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
