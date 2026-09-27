@@ -148,3 +148,4 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
 >>>>>>> 985951adfad5147f3c737c3c4ea3de040541e397
+node_modules/

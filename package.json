@@ -1,0 +1,29 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "author": "Vincent Putiri",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.9"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vputiri2024/5610_Project_1.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/vputiri2024/5610_Project_1/issues"
+  },
+  "homepage": "https://github.com/vputiri2024/5610_Project_1#readme"
+}
