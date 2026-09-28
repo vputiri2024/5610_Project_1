@@ -100,13 +100,16 @@ ESLint is configured for 2-space indent, double quotes, required semicolons, and
 ---
 
 ## AI Usage
+
 This README was created using Claude Fable 5.1
 
-Script / Prompt: 
+Script / Prompt:
+
 # Project 1 Vincent Putiri Full-Stack Product Developer Website
-As a developer and expert at drafting technical information that is accessible to English 
-speaking developers. Please take my project overview which I will provide and my github 
-repository url which I will provide and draft a comprehensive but concise README for 
+
+As a developer and expert at drafting technical information that is accessible to English
+speaking developers. Please take my project overview which I will provide and my github
+repository url which I will provide and draft a comprehensive but concise README for
 developers visiting this repository.
 
 ## License
